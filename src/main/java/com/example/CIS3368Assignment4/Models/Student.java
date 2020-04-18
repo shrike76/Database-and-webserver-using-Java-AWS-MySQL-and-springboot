@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Student")
+@Table(schema="dbo", name="student")
 public class Student {
     @Id
     int id;
@@ -14,6 +14,8 @@ public class Student {
     String fname;
     @Column
     String lname;
+    @Column
+    int age;
 
     public int getId() {
         return id;
@@ -28,7 +30,11 @@ public class Student {
                 "id=" + id +
                 ", fname='" + fname + '\'' +
                 ", lname='" + lname + '\'' +
+                ", age='" + age + '\'' +
                 '}';
+    }
+    public int getAge(){
+        return age;
     }
 
     public void setId(int id) {
@@ -51,9 +57,10 @@ public class Student {
         return lname;
     }
 
-    public Student(int id, String fname, String lname) {
+    public Student(int id, String fname, String lname, int age) {
         this.id = id;
         this.fname = fname;
         this.lname = lname;
+        this.age=age;
     }
 }

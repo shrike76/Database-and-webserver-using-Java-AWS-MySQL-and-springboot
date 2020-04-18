@@ -4,10 +4,11 @@
 <body>
 Welcome!
 <br>
-<a href="/view">View All Records</a> <br>
-<a href="/view2">Edit</a> <br>
+<a href="/view">View All</a> <br>
+<a href="/view4">View by Last Name</a> <br>
+<a href="/view3"> Delete by First Name</a> <br>
+<a href="/edit2">Edit</a> <br>
 <a href="/add" >Add</a> <br>
-<a href="/view3"> Delete </a> <br>
 <br>
 </body>
 </html>
